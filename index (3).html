@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Guru Bhai | Telegram Channel</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, #19234e 0%, transparent 45%),
+        radial-gradient(circle at bottom right, #8b0f22 0%, transparent 45%),
+        linear-gradient(135deg, #16142f, #2b1438, #73132a);
+      color: white;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 100px;
+      background: linear-gradient(180deg, #ffc400, #f7b600);
+      color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 35px;
+      border-bottom: 2px solid #ffd83d;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .telegram-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #151515;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: white;
+    }
+
+    .brand h1 {
+      font-size: 25px;
+      letter-spacing: 1px;
+    }
+
+    .brand p {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 4px;
+    }
+
+    .join-now {
+      text-decoration: none;
+      background: linear-gradient(135deg, #101010, #292929);
+      color: white;
+      padding: 18px 30px;
+      border-radius: 50px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 850px;
+      margin: auto;
+      padding: 45px 25px 60px;
+      text-align: center;
+    }
+
+    .profile {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      padding: 8px;
+      margin: 0 auto 25px;
+      background: #ffc400;
+      box-shadow: 0 0 30px rgba(255, 196, 0, 0.7);
+    }
+
+    .profile img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .name {
+      font-size: 52px;
+      color: #ffc400;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .expert {
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+
+    .users {
+      display: inline-block;
+      background: linear-gradient(135deg, #ffc400, #ffdf52);
+      color: #111;
+      padding: 15px 30px;
+      border-radius: 40px;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .info-card {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      padding: 25px;
+      margin: 15px 0;
+      border-radius: 20px;
+      background: rgba(15, 10, 30, 0.55);
+      border: 1px solid rgba(255,255,255,0.25);
+      backdrop-filter: blur(10px);
+    }
+
+    .info-icon {
+      width: 90px;
+      min-width: 90px;
+      font-size: 45px;
+      color: #ffc400;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.2);
+      margin-right: 25px;
+      padding-right: 20px;
+    }
+
+    .info-card h2 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .info-card p {
+      color: #dddddd;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    .notice {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      gap: 25px;
+      margin-top: 35px;
+      padding: 25px;
+      border-radius: 20px;
+      border: 2px dashed #ffc400;
+      background: rgba(20, 10, 40, 0.5);
+    }
+
+    .notice-icon {
+      font-size: 55px;
+      color: #ffc400;
+    }
+
+    .notice h3 {
+      color: #ffc400;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .notice p {
+      color: #ddd;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .join-section {
+      margin-top: 45px;
+      padding: 50px 25px 40px;
+      background: linear-gradient(180deg, #ffc400, #f4b400);
+      border-radius: 50% 50% 0 0;
+      color: #111;
+    }
+
+    .join-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 25px;
+      letter-spacing: 2px;
+    }
+
+    .telegram-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+      max-width: 650px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #111, #292929);
+      color: white;
+      text-decoration: none;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    .safe {
+      margin-top: 25px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+
+      .topbar {
+        height: auto;
+        padding: 15px;
+      }
+
+      .brand h1 {
+        font-size: 17px;
+      }
+
+      .brand p {
+        font-size: 11px;
+      }
+
+      .telegram-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+      }
+
+      .join-now {
+        padding: 12px 15px;
+        font-size: 13px;
+      }
+
+      .profile {
+        width: 200px;
+        height: 200px;
+      }
+
+      .name {
+        font-size: 42px;
+      }
+
+      .subtitle {
+        font-size: 21px;
+      }
+
+      .expert {
+        font-size: 18px;
+      }
+
+      .info-card {
+        padding: 18px;
+      }
+
+      .info-icon {
+        width: 65px;
+        min-width: 65px;
+        font-size: 32px;
+        margin-right: 15px;
+      }
+
+      .info-card h2 {
+        font-size: 18px;
+      }
+
+      .info-card p {
+        font-size: 14px;
+      }
+
+      .telegram-btn {
+        font-size: 19px;
+        padding: 20px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP HEADER -->
+  <div class="topbar">
+
+    <div class="brand">
+      <div class="telegram-icon">➤</div>
+
+      <div>
+        <h1>JOIN TELEGRAM CHANNEL</h1>
+        <p>Fast Updates & Information</p>
+      </div>
+    </div>
+
+    <a href="https://t.me/YOUR_USERNAME" class="join-now">
+      ➤ JOIN NOW
+    </a>
+
+  </div>
+
+
+  <div class="container">
+
+    <!-- PROFILE IMAGE -->
+    <div class="profile">
+      <img src="YOUR-IMAGE-LINK.jpg" alt="Profile">
+    </div>
+
+    <h1 class="name">GURU BHAI</h1>
+
+    <div class="subtitle">
+      ALL MATKA GAMES AVAILABLE
+    </div>
+
+    <div class="expert">
+      Best Expert Updates
+    </div>
+
+    <div class="users">
+      👥 20K+ USERS JOINED
+    </div>
+
+
+    <!-- CARD 1 -->
+    <div class="info-card">
+
+      <div class="info-icon">▣</div>
+
+      <div>
+        <h2>FRIDABAD, NIGHT ALL MARKET</h2>
+        <p>Single Jodi • Panel • Jodi • Chart</p>
+      </div>
+
+    </div>
+
+
+    <!-- CARD 2 -->
+    <div class="info-card">
+
+      <div class="info-icon">◎</div>
+
+      <div>
+        <h2>ALL MARKET, GAZIYABAD</h2>
+        <p>Disawar • Gali • Faridabad • Ghaziabad</p>
+      </div>
+
+    </div>
+
+
+    <!-- CARD 3 -->
+    <div class="info-card">
+
+      <div class="info-icon">✓</div>
+
+      <div>
+        <h2>FAST GAME UPDATE</h2>
+        <p>Latest information and updates available.</p>
+      </div>
+
+    </div>
+
+
+    <!-- CARD 4 -->
+    <div class="info-card">
+
+      <div class="info-icon">⚡</div>
+
+      <div>
+        <h2>FAST UPDATE</h2>
+        <p>Pahle Result • Pahle Update</p>
+      </div>
+
+    </div>
+
+
+    <!-- NOTICE -->
+    <div class="notice">
+
+      <div class="notice-icon">📢</div>
+
+      <div>
+        <h3>SIRF YAHI NAHI, BOHOT KUCH MILEGA</h3>
+
+        <p>
+          Chart • Trick • Support • Live Update<br>
+          Sab Kuch Ek Hi Channel Par
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- JOIN TELEGRAM SECTION -->
+    <div class="join-section">
+
+      <div class="join-title">
+        JOIN TELEGRAM CHANNEL
+      </div>
+
+      <!-- 12 SEC COUNTDOWN REMOVED -->
+
+      <a
+        href="https://t.me/YOUR_USERNAME"
+        class="telegram-btn"
+      >
+        ➤ JOIN TELEGRAM CHANNEL
+      </a>
+
+      <div class="safe">
+        🛡 INFORMATION PAGE
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

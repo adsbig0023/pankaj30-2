@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Connect With Us</title>
+
+  <!-- =========================
+       META PIXEL - START
+       ========================= -->
+
+  <!-- Apna Pixel Code yahan paste karein -->
+
+  <!-- =========================
+       META PIXEL - END
+       ========================= -->
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, #1bd741 0%, transparent 35%),
+        linear-gradient(145deg, #061f18, #0b3d2e 55%, #06251c);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 430px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      backdrop-filter: blur(15px);
+      border-radius: 28px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
+
+    /* PHOTO */
+    .profile {
+      width: 105px;
+      height: 105px;
+      border-radius: 50%;
+      margin: auto;
+      border: 4px solid #25d366;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 0 30px rgba(37,211,102,0.35);
+    }
+
+    .profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 29px;
+      font-weight: 800;
+    }
+
+    .verified {
+      color: #25d366;
+      font-size: 14px;
+      margin-top: 7px;
+      font-weight: bold;
+    }
+
+    .description {
+      margin: 18px 5px 25px;
+      color: #d9e8e3;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    /* FEATURES */
+    .features {
+      display: grid;
+      gap: 11px;
+      margin-bottom: 25px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-align: left;
+      padding: 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: #25d366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .feature strong {
+      font-size: 14px;
+    }
+
+    .feature small {
+      display: block;
+      margin-top: 3px;
+      color: #b9cec7;
+      font-size: 12px;
+    }
+
+    /* WHATSAPP BUTTON */
+    .whatsapp-btn {
+      display: block;
+      text-decoration: none;
+      color: #06251c;
+      background: #25d366;
+      padding: 17px;
+      border-radius: 15px;
+      font-size: 18px;
+      font-weight: 800;
+      box-shadow: 0 10px 25px rgba(37,211,102,0.30);
+      transition: 0.25s;
+    }
+
+    .whatsapp-btn:hover {
+      transform: translateY(-3px);
+      background: #2be873;
+    }
+
+    .secure {
+      margin-top: 15px;
+      color: #9fbab1;
+      font-size: 12px;
+    }
+
+    .footer {
+      margin-top: 25px;
+      color: #75958a;
+      font-size: 11px;
+    }
+
+    @media(max-width:380px) {
+      h1 {
+        font-size: 25px;
+      }
+
+      .card {
+        padding: 27px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <!-- =========================
+         APNI PHOTO YAHAN LAGAYEIN
+         ========================= -->
+    <div class="profile">
+      <img src="https://via.placeholder.com/200"
+           alt="Profile Photo">
+    </div>
+
+    <h1>Connect With Us</h1>
+
+    <div class="verified">
+      ✓ WhatsApp Available
+    </div>
+
+    <p class="description">
+      Kisi bhi information, enquiry ya assistance ke liye
+      humse directly WhatsApp par contact karein.
+    </p>
+
+
+    <!-- FEATURES -->
+    <div class="features">
+
+      <div class="feature">
+        <div class="icon">💬</div>
+        <div>
+          <strong>Direct WhatsApp Chat</strong>
+          <small>Seedha WhatsApp par baat karein</small>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="icon">⚡</div>
+        <div>
+          <strong>Quick Response</strong>
+          <small>Aapki enquiry ka jawab paayein</small>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="icon">🔒</div>
+        <div>
+          <strong>Easy & Secure</strong>
+          <small>Simple one-click connection</small>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         WHATSAPP LINK
+         ========================= -->
+    <a
+      href="https://wa.link/jzeud9"
+      target="_blank"
+      class="whatsapp-btn"
+      onclick="if(typeof fbq !== 'undefined'){fbq('track','Contact');}"
+    >
+      💬 Chat on WhatsApp
+    </a>
+
+    <div class="secure">
+      🔐 Click the button to continue to WhatsApp
+    </div>
+
+    <div class="footer">
+      © 2026 All Rights Reserved
+    </div>
+
+  </div>
+
+</body>
+</html>
